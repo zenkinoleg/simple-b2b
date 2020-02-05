@@ -2,7 +2,8 @@
 
 ### Description
 Basic implementation of B2B Transactions. Allows users to make transfers between two accounts
-Features:
+
+#### Features:
  - Symfony 5
  - Domain Driven Design
  - SOLID principles
