@@ -1,0 +1,59 @@
+about:
+    path:       /
+    controller: App\Controller\IndexController::index
+    methods: GET
+
+users_list:
+    path:       /users
+    controller: App\Controller\UserController::index
+    methods: GET
+
+user_show:
+    path:       /users/{id<[1-9]\d*>?1}
+    controller: App\Controller\UserController::show
+    methods: GET
+
+user_create:
+    path:       /users
+    controller: App\Controller\UserController::create
+    methods: POST
+
+user_update:
+    path:       /users/{id<[1-9]\d*>?1}
+    controller: App\Controller\UserController::update
+    methods: PUT
+
+user_delete:
+    path:       /users/{id<[1-9]\d*>?1}
+    controller: App\Controller\UserController::delete
+    methods: DELETE
+
+accounts_list:
+    path:       /accounts
+    controller: App\Controller\AccountController::index
+    methods: GET
+
+account_show:
+    path:       /accounts/{id<[1-9]\d*>?1}
+    controller: App\Controller\AccountController::show
+    methods: GET
+
+account_create:
+    path:       /accounts
+    controller: App\Controller\AccountController::create
+    methods: POST
+
+account_update:
+    path:       /accounts/{id<[1-9]\d*>?1}
+    controller: App\Controller\AccountController::update
+    methods: PUT
+
+account_delete:
+    path:       /accounts/{id<[1-9]\d*>?1}
+    controller: App\Controller\AccountController::delete
+    methods: DELETE
+
+transaction_create:
+    path:       /transactions
+    controller: App\Controller\TransactionController::create
+    methods: POST
