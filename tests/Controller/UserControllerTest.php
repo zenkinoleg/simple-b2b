@@ -43,10 +43,10 @@ class UserControllerTest extends WebTestCase
         $client->request(
             'POST',
             '/users',
-            [
-                'name'  => $data['name'] ?? '',
-                'email' => $data['email'] ?? '',
-            ]
+            [],
+            [],
+            ['CONTENT_TYPE' => 'application/json'],
+            json_encode($data)
         );
 
         $this->assertEquals(
