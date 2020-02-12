@@ -12,13 +12,7 @@ class IndexControllerTest extends WebTestCase
         $client = static::createClient();
 
         $client->request('GET', '/');
-/*
-        $data = json_decode(
-            $client->getResponse()->getContent(),
-            true
-        );
-        dd($data['Data']['Application']);
-*/
+
         $this->assertEquals(
             200,
             $client->getResponse()->getStatusCode()
