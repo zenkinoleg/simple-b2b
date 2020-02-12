@@ -146,7 +146,7 @@ final class ApiResponse
                 'Message' => 'Record deleted',
                 'Data'    => $data,
             ])
-            ->setStatus(RESPONSE::HTTP_CREATED)
+            ->setStatus(RESPONSE::HTTP_NO_CONTENT)
             ->respond();
     }
 

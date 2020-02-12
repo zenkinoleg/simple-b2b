@@ -22,9 +22,10 @@ class IndexController extends AbstractController
                 'Symfony 5',
                 'Domain Driven Design',
                 'SOLID principles',
+                'Automated Unit Tests',
             ],
             'Upcoming'    => [
-                'Automated Unit Tests',
+                'More Business Logic',
                 'EntityId as Class to be more SOLID',
                 'Database Seeders',
                 'Soft-deletable Transactions',

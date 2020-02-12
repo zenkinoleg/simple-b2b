@@ -7,6 +7,7 @@ Basic implementation of B2B Transactions. Allows users to make transfers between
  - Symfony 5
  - Domain Driven Design
  - SOLID principles
+ - Automated Unit Tests
 
 #### Regular Install
 ```console
@@ -36,12 +37,18 @@ Basic implementation of B2B Transactions. Allows users to make transfers between
  php bin/console doctrine:migrations:migrate
 ```
 
+#### Testing
+ - Run tests with command
+```console
+  php bin/phpunit
+```
+
 #### Usage
 Use [postman collection](https://www.getpostman.com/collections/4cb64d109a618534002d) to play with API calls
 
 #### Upcoming Features
 
-- Automated Unit Tests
+- More Business Logic
 - EntityId as Class to be more SOLID
 - Database Seeders
 - Soft-deletable Transactions

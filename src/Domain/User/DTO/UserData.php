@@ -67,4 +67,18 @@ final class UserData extends DataTransferObject
             ->setName($data->name ?? $dto->getName())
             ->setEmail($data->email ?? $dto->getEmail());
     }
+
+    /**
+     * @param  array  $data
+     *
+     * @return static
+     */
+    public static function fromArray(array $data): self
+    {
+        $dto  = new static;
+
+        return $dto
+            ->setName($data['name'] ?? $dto->getName())
+            ->setEmail($data['email'] ?? $dto->getEmail());
+    }
 }
